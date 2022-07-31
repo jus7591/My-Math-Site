@@ -1,0 +1,167 @@
+body
+{
+	background:white;
+	font-style: italic;
+}
+#homeButton
+{
+	width: 390px;
+	margin: 10px 10px;
+	padding: 20px 50px;
+	padding-right: 100px;
+	background-color: #A9A9A9;
+	font-size: 15px;
+	text-align: center;
+	border: 1px solid #2E1263;
+	letter-spacing: 4px;
+	outline: none;
+	font-weight: 725;
+}
+#container
+{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 60vh;
+}
+
+#container1
+{
+	display:flex;
+	height: 80vh;
+
+	
+}
+#footer
+{
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+
+}
+#container2
+{
+	display:flex;
+	flex-direction: row;
+	float: right;
+	height: 50vh;
+}
+#container3
+{
+	float: right;
+	align-items: right;
+	margin: -75px 12px ;
+	height: -10px;
+	width: -50px;
+	border-radius: 90%;
+}
+#BackHomeButton
+{
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+}
+h1
+{
+	color: dark gray;
+	font-size: 50px;
+	border-top: 5px solid;
+}
+h4
+{
+	font-weight: 100;
+	font-size: 25px;
+}
+a
+{
+	background-color: #A9A9A9
+}
+p 
+{
+	color: black;
+}
+ul
+{
+	font-size: 18px;
+}
+body
+{
+	background-color: #00FFFF;
+	font-style: verdana;
+	font-size: 25px;
+
+}
+#CalculateButton
+{
+	
+	font-size: 15px;
+	letter-spacing: 4px;
+	outline: none;
+	font-weight: 725;
+}
+#buttonDiv {
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center ;
+	height: 10vh;
+	font-weight: 1000;
+
+}
+#newtonPic
+{
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#logo
+{
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#calcButt
+{
+	width: 200px;
+	text-align: center;
+	margin: 10px 10px;
+	padding: 20px 50px;
+}
+
+button
+{
+	width: 390px;
+	margin: 10px 10px;
+	padding: 20px 50px;
+	padding-right: 100px;
+	background-color: #A9A9A9;
+	font-size: 15px;
+	text-align: left;
+	border: 1px solid #2E1263;
+	letter-spacing: 4px;
+	outline: none;
+	font-weight: 725;
+
+}
+
+button:hover
+{
+	transition:1.5s;
+	background-color: #2E1263;
+	color:#F69680;
+	text-decoration: underline;
+}
+
+
+	#snakepic
+{
+	float: right;
+	margin: 20px 20px ;
+	height: 350px;
+	width: 500px;
+}

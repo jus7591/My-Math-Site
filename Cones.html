@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Cones Equation</title>
+		<link href="main.css" rel="stylesheet" type"text/css" />
+	</head>
+	
+	<body>
+	
+		<h1>Volume of a Cone</h1>
+			<section id = "container2">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/aP769v8PrZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<section id = "container1">
+				
+				<p>V = (1 &divide; 3) &pi; r <sup>2</sup> h <br>
+				Example: Given that r = 3, h = 5 and &pi; = 3.14 <br>
+				Volume = (1 &divide; 3) &#215; (3.14) &#215; 3<sup>2</sup> &#215; 5 <br>
+				Volume = 47.1 <br>
+				Enter Value for r: 
+				&nbsp<input type = "text" id = "rValue" <br> <br>
+				Enter Value for h: 
+				&nbsp<input type = "text" id = "hValue" <br> <br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button id='calcButt' onclick = "volume()"> Calculate: </button><br>
+				Volume : 
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id = "answer1" name = Result"><br>
+
+				</p>
+
+
+
+			</section>
+		<script type = "text/javascript">	
+		function volume()
+		{
+			var field1 = document.getElementById ("rValue").value;
+			var field2 = document.getElementById("hValue").value;
+			var result = ((parseFloat(field1) * parseFloat(field1) * parseFloat(field2) * 3.14) / 3);
+			result = result.toFixed(2);
+			document.getElementById("answer1").value = result;
+
+
+		}
+		
+		
+		</script>
+	</body>
+	
+	<div id = "BackHomeButton">
+		<button><a href="MainPage.html"> Back to Main Page</button></a>
+	</div>
+	<div id = "footer">
+			<footer> © Vattana Eang, Justin Maddox & Michael Polanco</footer>
+		</div>
+</html>

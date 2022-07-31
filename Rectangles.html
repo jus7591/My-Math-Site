@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>Rectangle Equation</title>
+		<link href="main.css" rel="stylesheet" type"text/css" />
+	</head>
+	
+	<body>
+	
+		<h1>Area and Parameter of a Rectangle</h1>
+			<section id = "container2">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/UfUwTtaHyp8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<section id = "container1">
+				
+				<p> Area = length &#215;  witdh <br>
+					A = lw <br><br>
+					Parameter = 2 ( length + width) <br>
+					P = 2 ( l + w) <br>
+					Example: Given that h = 5 and l = 7 <br>
+					Area = 7 &#215; 5 <br>
+					Area = 35 <br> <br>
+					Parameter = 2 ( 7 + 5) <br>
+					P = 2 ( 12 ) <br>
+					P = 24 <br>
+					Enter Value for l: &nbsp&nbsp
+					<input type = "text" id = "lValue" <br> <br>
+					Enter Value for h: &nbsp
+					<input type = "text" id = "hValue" <br> <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<button id='calcButt' onclick = "equation()"> Calculate: </button><br>
+					Area : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					<input type = "text" id = "answer" name = "result"><br>
+					Parameter : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<input type = "text" id = "answer1" name = result1"><br>
+
+
+				</p>
+
+
+
+			</section>
+		<script type = "text/javascript">	
+		function equation()
+		{
+			var field1 = document.getElementById ("lValue").value;
+			var field2 = document.getElementById("hValue").value;
+			var result = parseFloat(field1) * parseFloat(field2);
+			result = result.toFixed(2);
+			document.getElementById("answer").value = result;
+			var result1 = 2 * (parseFloat(field1) + parseFloat(field2));
+			result1 = result1.toFixed(2);
+			document.getElementById("answer1").value = result1;
+		}
+		
+		
+		</script>
+	</body>
+	
+	<div id = "BackHomeButton">
+		<button><a href="MainPage.html"> Back to Main Page</button></a>
+	</div>
+	<div id = "footer">
+			<footer> © Vattana Eang, Justin Maddox & Michael Polanco</footer>
+		</div>
+</html>

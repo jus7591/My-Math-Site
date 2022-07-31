@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Arithmetic Operations</title>
+		<link href="main.css" rel="stylesheet" type"text/css" />
+	</head>
+	
+	<body>
+	
+		<h1>Arithmetic Operations</h1>
+			<section id = "container2">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/TMubSggUOVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<section id = "container1">
+				<p>ab + ac = a(b+c)
+				<br>
+				<br>Example:
+				<br>(2)(3) + 2(4) = 2(3 + 4)
+				<br>6 + 8 = 2(7)
+				<br>14 = 14
+				<br>
+				<br>Enter Value for A:
+				<input type = "text" id = "valueA"<br>
+				<br>Enter Value for B:
+				<input type = "text" id = "valueB"<br>
+				<br>Enter Value for C:
+				<input type = "text" id = "valueC"<br>
+				<br> 
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<button id='calcButt' onclick = "calculate()">Calculate</button>
+
+				<br>
+				  &nbsp &nbsp &nbsp Result: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  
+				   
+				<input type="text" id="answer" name="Result">
+
+				</p>
+			</section>
+		<script type = "text/javascript">	
+		function calculate()
+		{
+			var field1 = document.getElementById("valueA").value;
+			var field2 = document.getElementById("valueB").value;
+			var field3 = document.getElementById("valueC").value;
+			
+			var result = (parseFloat(field1) * parseFloat(field2)) + (parseFloat(field1) * parseFloat(field3));
+			document.getElementById("answer").value = result;
+			
+		}
+		</script>
+	</body>
+	
+	<div id = "BackHomeButton">
+		<button><a href="MainPage.html"> Back to Main Page</button></a>
+	</div>
+	<div id = "footer">
+			<footer> © Vattana Eang, Justin Maddox & Michael Polanco</footer>
+		</div>
+</html>

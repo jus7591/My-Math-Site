@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>Complex Numbers</title>
+		<link href="main.css" rel="stylesheet" type"text/css" />
+	</head>
+	
+	<body>
+	
+		<h1>Complex Numbers</h1>
+			<section id = "container2">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/SP-YJe7Vldo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<section id = "container1">
+				<p>&radic;<span style="text-decoration: overline">-1</span> =  i <br>
+					i<sup>2</sup> = -1 <br>
+					i<sup>14</sup> = i<sup>2</sup> = -1 divide exponent by 4, use remainder, solve.
+				<br>
+				<br>Example: i <sup>3</sup> = 
+				&radic;<span style="text-decoration: overline">-1</span> * &radic;<span style="text-decoration: overline">-1</span> * &radic;<span style="text-decoration: overline">-1</span> <br>
+				<br>
+				<br>Enter Value for exponent:
+				<input type = "text" id = "valueA"<br>
+				<br> 
+				<button id='calcButt' onclick = "calculate()">Calculate</button>
+				<br>
+				  &nbsp &nbsp &nbsp Result: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<input type="text" id="answer" name="Result"> 
+				</p>
+			</section>
+		<script type = "text/javascript">	
+		function calculate()
+		{
+			var field1 = document.getElementById("valueA").value;
+			
+			var returnResult;
+			if (field1 % 4 == 0)
+			{
+				returnResult = 0;
+			} 
+			else if (field1 % 4 == 1)
+			{
+				returnResult = i;
+			}
+			else if (field1 % 4 == 2)
+			{
+				returnResult = "-1";
+			}
+			else if (field1 % 4 ==3 )
+			{
+				returnResult = "-i";
+			}
+			
+			
+			document.getElementById("answer").value = returnResult;
+			
+		}
+		</script>
+	</body>
+	
+	<div id = "BackHomeButton">
+		<button><a href="MainPage.html"> Back to Main Page</button></a>
+	</div>
+	<footer> © Vattana Eang, Justin Maddox & Michael Polanco</footer>
+</html>

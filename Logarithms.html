@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Logarithms</title>
+		<link href="main.css" rel="stylesheet" type"text/css" />
+	</head>
+	
+	<body>
+	
+		<h1>Logarithms</h1>
+			<section id = "container2">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/mQTWzLpCcW0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<section id = "container1">
+				<p>y = log<sub>b</sub> x <==> x = b<sup> y</sup>
+				<br>log<sub>b</sub> a = <sup>log a</sup>&frasl;<sub>log b</sub>
+				<br>Example: Given a = 5, and b = 7
+				<br><sup>log 5</sup>&frasl;<sub>log 7</sub> = 0.83
+				<br>
+				<br>Enter Value for A:
+				<input type = "text" id = "valueA"<br>
+				<br>Enter Value for B:
+				<input type = "text" id = "valueB"<br>
+				<br> &nbsp &nbsp &nbsp &nbsp  
+				<button id='calcButt' onclick = "calculate()">Calculate</button>
+				<br>
+				  &nbsp &nbsp &nbsp Result: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;      
+				<input type="text" id="answer" name="Result">
+				</p>
+			</section>
+		<script type = "text/javascript">	
+		function calculate()
+		{
+			var field1 = document.getElementById("valueA").value;
+			var field2 = document.getElementById("valueB").value;
+			
+			var result = Math.log(field1) / Math.log(field2);
+			result = result.toFixed(2);
+			document.getElementById("answer").value = result;
+			
+		}
+		</script>
+	</body>
+	
+	<div id = "BackHomeButton">
+		<button><a href="MainPage.html"> Back to Main Page</button></a>
+	</div>
+	<footer> © Vattana Eang, Justin Maddox & Michael Polanco</footer>
+</html>

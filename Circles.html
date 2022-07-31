@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Circles Equation</title>
+		<link href="main.css" rel="stylesheet" type"text/css" />
+	</head>
+	
+	<body>
+	
+		<h1>Area and Circumference of a Circle</h1>
+			<section id = "container2">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/y21muf5IOz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<section id = "container1">
+				<p>A = &pi; r <sup>2</sup><br>
+				C =2&pi;r <br>
+				<br>
+				Example: Given that r = 5 and &pi; = 3.14<br>
+				Area = &pi; 5 <sup>2</sup><br>
+				Area = &pi; &#215; 25<br>
+				Area = 78.5<br>
+				<br>
+				Circumference = 2 &pi; r<br>
+				Circumference = 2 &#215; &pi; &#215; 5<br>
+				Circumference = 31.4 <br>	
+				<br>
+				Enter Value for r :&nbsp &nbsp
+				<input type = "text" id = "valueR"<br>
+				<br> &nbsp 
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button id='calcButt' onclick = "AreaOfCircle()">Calculate:</button><br>
+				Area : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				
+				<input type="text" id="answer" name="Result"><br>
+				Circumference : &nbsp&nbsp&nbsp&nbsp&nbsp
+				<input type="text" id="answer1" name="Result1"><br>
+				</p>
+
+
+
+			</section>
+		<script type = "text/javascript">	
+		function AreaOfCircle()
+		{
+			var field1 = document.getElementById ("valueR").value;
+			var result = (parseFloat(field1) * parseFloat(field1) * 3.14);
+			document.getElementById("answer").value = result;
+			var	result1 = (2 * parseFloat(field1) * 3.14);
+			finalResult = result1.toFixed(2);
+			document.getElementById("answer1").value = finalResult;
+
+
+		}
+		
+			
+		
+		</script>
+	</body>
+	
+	<div id = "BackHomeButton">
+		<button><a href="MainPage.html"> Back to Main Page</button></a>
+	</div>
+	<footer> © Vattana Eang, Justin Maddox & Michael Polanco</footer>
+</html>

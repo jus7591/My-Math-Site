@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Absolute Value</title>
+		<link href="main.css" rel="stylesheet" type"text/css" />
+	</head>
+	
+	<body>
+	
+		<h1>Absolute Value</h1>
+			<section id = "container2">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/dQCNC97Y-mw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<section id = "container1">
+				<p>|a| = ?
+				<br>
+				<br>Example: Given that a = -5 or a = 2
+				<br>|-5| = 5
+				<br>|2| = 2
+				<br>
+				<br>Enter Negative Value for A:
+				<input type = "text" id = "valueA"<br>
+				<br> 
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button  id='calcButt' onclick = "calculate()">Calculate</button>
+				<br>
+				  &nbsp &nbsp &nbsp Result: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+				<input type="text" id="answer" name="Result">
+				</p>
+			</section>
+		<script type = "text/javascript">	
+		function calculate()
+		{
+			var field1 = document.getElementById("valueA").value;
+			
+			var result = Math.abs(parseFloat(field1));
+			document.getElementById("answer").value = result;
+			
+		}
+		</script>
+	</body>
+	
+	<div id = "BackHomeButton">
+		<button><a href="MainPage.html"> Back to Main Page</button></a>
+	</div>
+	<footer> © Vattana Eang, Justin Maddox & Michael Polanco</footer>
+</html>

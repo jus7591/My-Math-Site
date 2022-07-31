@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Log Properties</title>
+		<link href="main.css" rel="stylesheet" type"text/css" />
+	</head>
+	
+	<body>
+	
+		<h1>Log Properties</h1>
+			<section id = "container2">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/kqVpPSzkTYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<section id = "container1">
+				<p>log<sub>b</sub>b<sup>x</sup> = x <br> <br>
+				Example: Given that b = 5 and x =3 <br>
+				log<sub>5</sub>5<sup>3</sup> = 3
+				<br>
+				<br>Enter Value for B:
+				<input type = "text" id = "valueB"<br>
+				<br>Enter Value for X:
+				<input type = "text" id = "valueX"<br>
+				
+				<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<button id='calcButt' onclick = "calculate()">Calculate</button>
+				<br>
+				Result: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<input type="text" id="answer" name="Result">
+				</p>
+			</section>
+		<script type = "text/javascript">	
+		function calculate()
+		{
+			var field1 = document.getElementById("valueB").value;
+			
+			document.getElementById("answer").value = field1;
+			
+		}
+		</script>
+	</body>
+	
+	<div id = "BackHomeButton">
+		<button><a href="MainPage.html"> Back to Main Page</button></a>
+	</div>
+	<div id = "footer">
+			<footer> © Vattana Eang, Justin Maddox & Michael Polanco</footer>
+		</div>
+</html>

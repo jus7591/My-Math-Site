@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Distance Formula</title>
+		<link href="main.css" rel="stylesheet" type"text/css" />
+	</head>
+	
+	<body>
+		
+		<h1>Distance Formula</h1>
+			<section id = "container2">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Dl_mX9J-COE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<section id = "container1">
+				<p> Distance is a numerical measurement of how far apart objects are <br>	
+				
+				<br>Enter Value for x2:
+				<input type = "text" id = "x2"<br>
+				<br>Enter Value for x1:
+				<input type = "text" id = "x1"<br>
+				<br>Enter Value for y2:
+				<input type = "text" id = "y2"<br>
+				<br>Enter Value for y1:
+				<input type = "text" id = "y1"<br>
+				<br>
+				&nbsp&nbsp&nbsp&nbsp&nbsp
+				<button id='calcButt' onclick = "calculate()">Calculate</button>
+				<br>
+				Result: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<input type="text" id="answer" name="Result">				
+				</p>
+			</section>
+		<script type = "text/javascript">	
+		function calculate()
+		{
+			var field1 = document.getElementById("x2").value;
+			var field2 = document.getElementById("x1").value;
+			var field3 = document.getElementById("y2").value;
+			var field4 = document.getElementById("y1").value;
+			
+			var result = (parseFloat(field1) * parseFloat(field2)) + (parseFloat(field1) * parseFloat(field3));
+			document.getElementById("answer").value = result;
+			
+		}
+		</script>
+	</body>
+	
+	<div id = "BackHomeButton">
+		<button><a href="MainPage.html"> Back to Main Page</button></a>
+	</div>
+	
+	<div id = "footer">
+			<footer> © Vattana Eang, Justin Maddox & Michael Polanco</footer>
+		</div>
+	
+</html>

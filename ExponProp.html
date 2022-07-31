@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Exponent Properties</title>
+		<link href="main.css" rel="stylesheet" type"text/css" />
+	</head>
+	
+	<body>
+	
+		<h1>Exponent Properties</h1>
+			<section id = "container2">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Zt2fdy3zrZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+			<section id = "container1">
+				<p><var>a<sup>n</sup> <var>a<sup>m</sup> = <var>a<sup>n+m</sup>
+				<br>
+				Example: Given that a = 2, n = 3, m = 4<br>
+				2<sup>3</sup> 2<sup>4</sup> = 2 <sup>(3+4)</sup> <br>
+			--> 2<sup>7</sup> = 128 <br>
+
+				<br>Enter Value for A:&nbsp&nbsp
+				<input type = "text" id = "valueA"<br>
+				<br>Enter Value for M:&nbsp
+				<input type = "text" id = "valueM"<br>
+				<br>Enter Value for N:&nbsp&nbsp
+				<input type = "text" id = "valueN"<br>
+				<br>
+				<br> &nbsp &nbsp &nbsp &nbsp &nbsp 
+				<button id='calcButt' onclick = "calculate()">Calculate</button>
+				<br>
+				<br>
+				 &nbsp &nbsp &nbsp Result: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+				<input type="text" id="answer" name="Result">
+				</p>
+			</section>
+		<script type = "text/javascript">
+		function calculate()
+		{
+			var field1 = document.getElementById("valueA").value;
+			var field2 = document.getElementById("valueM").value;
+			var field3 = document.getElementById("valueN").value;
+			
+			
+			var exponent = parseFloat(field2) + parseFloat(field3);
+			var result = Math.pow(parseFloat(field1), exponent);
+			document.getElementById("answer").value = result;
+		}
+		</script>
+	</body>
+	
+	<div id = "BackHomeButton">
+		<button><a href="MainPage.html"> Back to Main Page</button></a>
+	</div>
+	
+	<div id = "footer">
+			<footer> © Vattana Eang, Justin Maddox & Michael Polanco</footer>
+		</div>
+</html>
