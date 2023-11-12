@@ -3,20 +3,6 @@ body
 	background:white;
 	font-style: italic;
 }
-#homeButton
-{
-	width: 390px;
-	margin: 10px 10px;
-	padding: 20px 50px;
-	padding-right: 100px;
-	background-color: #A9A9A9;
-	font-size: 15px;
-	text-align: center;
-	border: 1px solid #2E1263;
-	letter-spacing: 4px;
-	outline: none;
-	font-weight: 725;
-}
 #container
 {
 	display:flex;
@@ -25,36 +11,18 @@ body
 	justify-content: center;
 	height: 60vh;
 }
-
 #container1
 {
 	display:flex;
 	height: 80vh;
-
 	
-}
-#footer
-{
-	position: absolute;
-	left: 10px;
-	bottom: 10px;
-
 }
 #container2
 {
 	display:flex;
 	flex-direction: row;
 	float: right;
-	height: 50vh;
-}
-#container3
-{
-	float: right;
-	align-items: right;
-	margin: -75px 12px ;
-	height: -10px;
-	width: -50px;
-	border-radius: 90%;
+	height: 60vh;
 }
 #BackHomeButton
 {
@@ -87,68 +55,23 @@ ul
 }
 body
 {
-	background-color: #00FFFF;
-	font-style: verdana;
+	background-color: #43608e;
 	font-size: 25px;
 
 }
-#CalculateButton
-{
-	
-	font-size: 15px;
-	letter-spacing: 4px;
-	outline: none;
-	font-weight: 725;
-}
-#buttonDiv {
-	
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center ;
-	height: 10vh;
-	font-weight: 1000;
-
-}
-#newtonPic
-{
-	height: 500px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-#logo
-{
-	height: 200px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-#calcButt
-{
-	width: 200px;
-	text-align: center;
-	margin: 10px 10px;
-	padding: 20px 50px;
-}
-
 button
 {
-	width: 390px;
-	margin: 10px 10px;
-	padding: 20px 50px;
-	padding-right: 100px;
+	margin: 10px 20px;
+	padding: 20px 20px;
 	background-color: #A9A9A9;
+	/*A9A9A9*/
 	font-size: 15px;
-	text-align: left;
+	text-align: center;
 	border: 1px solid #2E1263;
 	letter-spacing: 4px;
 	outline: none;
 	font-weight: 725;
-
 }
-
 button:hover
 {
 	transition:1.5s;
@@ -156,9 +79,15 @@ button:hover
 	color:#F69680;
 	text-decoration: underline;
 }
-
-
-	#snakepic
+#newton
+{
+	margin: 20px 20px ;
+	height: 500px;
+	border-radius: 95%;
+	margin-left: 30px;
+	
+}
+#snakepic
 {
 	float: right;
 	margin: 20px 20px ;
